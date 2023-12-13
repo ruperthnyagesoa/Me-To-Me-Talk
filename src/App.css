@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayish: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%); 
+}
+
+body {
+  background-color: var(--DarkBlue);
+  color: var(--LightCyan);
+  overflow: hidden;
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Utility Classes */
+.txt-small {
+  font-size: small;
+  letter-spacing: 5px;
+}
+
+.txt-large {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* Main Classes */
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(217, 19%, 25%);
+  padding-left: .25rem;
+  padding-top: .25rem;
+  padding-right: .25rem;
+}
+
+.advice-title {
+  color: var(--NeonGreen);
+  margin-top: 1.5rem;
+}
+
+.advice-content {
+  color: var(--LightCyan);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.advice-generate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.advice-btn-container{
+  background-color: var(--NeonGreen);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  transform: translateY(50%);
+}
+
+#dice:hover {
+  box-shadow: 0 0 20px var(--NeonGreen);
+  transition: box-shadow .5s;
+}
+
+@media screen and (min-width: 800px) {
+  .box{
+    width: 35%;
+  }
+  .advice-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
