@@ -1,2 +1,1 @@
-- Solution URL: [Github Repo](https://github.com/colormethanh/Advice_Generator_App)
-- Live Site URL: [Live Site]()
+
